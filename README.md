@@ -1,51 +1,62 @@
-# Desafio Spring Boot - Injeção de Dependência
+# 🚀 Desafio Spring Boot - Injeção de Dependência
 
-Projeto desenvolvido com foco em:
+Projeto desenvolvido com o objetivo de aplicar conceitos fundamentais de arquitetura backend utilizando **Java e Spring Boot**.
+
+---
+
+## 📚 Objetivo
+
+Implementar a lógica de cálculo de um pedido aplicando:
 
 - Injeção de Dependência
-- Separação de camadas (Entity, Service)
-- Regra de negócio para cálculo de pedido
-- Estruturação com Maven
+- Separação de responsabilidades
+- Organização em camadas (Entity e Service)
+- Regras de negócio para cálculo de frete e desconto
 
-## Tecnologias
+---
+
+## 🏗️ Arquitetura
+
+O projeto foi estruturado seguindo boas práticas:
+
+src  
+ ├── entities  
+ │    └── Order  
+ └── services  
+      ├── OrderService  
+      ├── ShippingService  
+      └── DiscountService  
+
+Cada classe possui responsabilidade única, garantindo baixo acoplamento e maior manutenibilidade.
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
 - Java 21
 - Spring Boot
 - Maven
+- Git & GitHub
 
-## Regras implementadas
+---
 
-- Frete:
-  - < 100 = R$20
-  - 100 até 200 = R$12
-  - > 200 = R$0
+## 📌 Regras de Negócio Implementadas
 
-- Desconto percentual aplicado sobre o valor do pedido
+### 🚚 Frete
 
-## Autor
-Toshiaki Okayama Filho
+- Pedidos abaixo de R$ 100.00 → R$ 20.00
+- Pedidos entre R$ 100.00 e R$ 200.00 → R$ 12.00
+- Pedidos acima de R$ 200.00 → R$ 0.00
 
+### 💸 Desconto
 
-## Como executar o projeto
+- Desconto percentual aplicado sobre o valor básico do pedido.
+
+---
+
+## ▶️ Como Executar o Projeto
 
 Clone o repositório:
 
+```bash
 git clone https://github.com/okayamafilho/desafio-spring-injection.git
-
-Entre na pasta do projeto:
-
-cd desafio-spring-injection
-
-Execute:
-
-./mvnw spring-boot:run
-
-
-## Exemplo de execução
-
-Pedido:
-Código: 1  
-Valor básico: 200.00  
-Desconto: 10%
-
-Resultado:
-Valor total: 192.00
