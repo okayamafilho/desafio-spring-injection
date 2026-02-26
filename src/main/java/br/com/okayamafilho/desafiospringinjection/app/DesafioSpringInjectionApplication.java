@@ -1,4 +1,4 @@
-package br.com.okayamafilho.desafiospringinjection;
+package br.com.okayamafilho.desafiospringinjection.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
