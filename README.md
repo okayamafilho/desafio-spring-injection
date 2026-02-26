@@ -23,3 +23,29 @@ Projeto desenvolvido com foco em:
 
 ## Autor
 Toshiaki Okayama Filho
+
+
+## Como executar o projeto
+
+Clone o repositório:
+
+git clone https://github.com/okayamafilho/desafio-spring-injection.git
+
+Entre na pasta do projeto:
+
+cd desafio-spring-injection
+
+Execute:
+
+./mvnw spring-boot:run
+
+
+## Exemplo de execução
+
+Pedido:
+Código: 1  
+Valor básico: 200.00  
+Desconto: 10%
+
+Resultado:
+Valor total: 192.00
