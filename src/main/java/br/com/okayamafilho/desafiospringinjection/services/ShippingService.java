@@ -1,7 +1,10 @@
 package br.com.okayamafilho.desafiospringinjection.services;
 
+import org.springframework.stereotype.Service;
+
 import br.com.okayamafilho.desafiospringinjection.entities.Order;
 
+@Service
 public class ShippingService {
 
     public double shipment(Order order) {
